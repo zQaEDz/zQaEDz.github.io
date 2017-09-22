@@ -1,0 +1,80 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QaED</title>
+<link href="css/core.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<meta name="yandex-verification" content="f9cfe1c00003167a">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link href="css/font-awesome.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.js"></script>
+<style>@font-face{font-family:Pompadur;src:url(fonts/font.eot);src:local(pompadur),url(fonts/font.ttf);}h1{font-family:Pompadur,'Comic Sans MS',cursive;}</style>
+<script> 
+	document.onkeydown = function(e) { 
+	if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly. 
+	} 
+	return false; 
+	}; 
+	</script>
+<script> 
+	function click() { 
+	if (event.button==2||event.button==3) { 
+	oncontextmenu='return false'; 
+	} 
+	} 
+	document.onmousedown=click 
+	document.oncontextmenu = new Function("return false;") 
+	</script>
+<script>
+	function disableWheelScroll(){
+	if (document.body.addEventListener) document.body.addEventListener('DOMMouseScroll', blockWheel, false);
+	document.body.onmousewheel = blockWheel;
+	}
+	function blockWheel(event){
+	if (!event) event = window.event;
+	if (event.stopPropagation) event.stopPropagation();
+	else event.cancelBubble = true;
+	if(event.preventDefault) event.preventDefault();
+	else event.returnValue = false;
+	}
+	disableWheelScroll();
+	</script>
+</head>
+<body onmousedown="return false" onselectstart="return false">
+<style>body{overflow:hidden}</style>
+<script>disableWheelScroll();</script>
+<div id="star" class="video mask overlay">
+<i class="volume-button fa fa-volume-up"></i>
+<i class="stop-button fa fa-pause"></i>
+<div class="video-fallback"></div>
+<video id="video" autoplay loop>
+<source src="videos/video.mp4" type="video/mp4"/>
+Your browser does not support the video tag. I suggest you upgrade your browser.
+</video>
+<canvas class="cover"></canvas>
+</div>
+<div class="pageoverlay">
+<div class="lightbox">
+<div class="awrapper">
+<div class="titles fadeInDown">
+<h1><font color="Red">#</font>QaED<font color="Red">GG</font></h1>
+</div>
+    <div class="media fadeInUp">
+        <a href="https://vk.com/zqaedz" id="vk" target="_blank">
+            <i class="fa fa-vk"></i>
+        </a>
+        <a href="http://steamcommunity.com/profiles/76561198126456555/" target="steam">
+            <i class="fa fa-steam"></i>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
